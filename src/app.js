@@ -8,7 +8,7 @@ const port = 3030
 
 //Configs
 app.set("view engine", "ejs")
-app.set("views".path.join(__dirname), "./views")
+app.set("views",(path.join(__dirname, "./views")));
 
 //Middlewares
 
@@ -23,7 +23,7 @@ const authRutes = require('./controllers/authentication')
 //Enrutadores
 
 app.use("/", otherRutes)
-app.use("/ath", authRutes)
+app.use("/auth", authRutes)
 
 
 

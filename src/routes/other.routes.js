@@ -1,8 +1,9 @@
 const express = require("express");
+const { home } = require("../controllers/other/index.");
 const router = express.Router();
-const otherController = require('../controllers/other')
+
 
 
 // desde app viene /
 
-router.get("/" , otherController.home)
+router.get("/" , home)
